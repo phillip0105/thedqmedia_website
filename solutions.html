@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Pháp & Bảng Giá | The dqmedia.</title>
+    <meta name="description" content="Chọn mức độ hỗ trợ content & media phù hợp với giai đoạn tăng trưởng. So sánh gói Core, Growth và Embedded.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 16px;
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.9375rem;
+        }
+        .comparison-table td:first-child, .comparison-table th:first-child {
+            text-align: left;
+        }
+        .comparison-table th {
+            background: var(--bg-panel);
+            font-weight: 600;
+        }
+        .check-icon { color: var(--accent-primary); }
+        .minus-icon { color: var(--text-muted); }
+        .addon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        .addon-card {
+            padding: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .addon-card i {
+            color: var(--accent-primary);
+            font-size: 1.25rem;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-full.svg" alt="The dqmedia. Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="how-it-works.html">Cách vận hành</a></li>
+                <li><a href="solutions.html" class="active">Giải pháp</a></li>
+                <li><a href="showcase.html">Dự án</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="color: white; padding: 8px 16px;">Đặt lịch tư vấn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <div class="container">
+                <span class="hero-badge"><i class="fa-solid fa-layer-group"></i> Solutions & Packages</span>
+                <h1>Chọn mức độ hỗ trợ phù hợp với cách doanh nghiệp đang tăng trưởng</h1>
+            </div>
+        </header>
+
+        <!-- Package Cards -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- Core -->
+                    <div class="panel pricing-card">
+                        <h3>Core Package</h3>
+                        <p style="color: var(--accent-secondary); font-size: 0.875rem; font-weight: 600; margin-bottom: 12px;">Dành cho: SME bắt đầu số hóa</p>
+                        <p class="pricing-desc">Duy trì sự hiện diện chuyên nghiệp trên Social, có nhịp content cơ bản ổn định.</p>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 16px;"><strong style="color: var(--text-primary);">Outcome:</strong> Không còn fanpage "chết". Content ra đều, hình ảnh đủ đẹp để bán hàng.</p>
+                        <div class="pricing-price">Liên hệ</div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> 15 ấn phẩm thiết kế/tháng</li>
+                            <li><i class="fa-solid fa-check"></i> 1 buổi chụp ảnh/tháng</li>
+                            <li><i class="fa-solid fa-check"></i> 1 Account Manager</li>
+                            <li><i class="fa-solid fa-check"></i> SLA 24-48h cho thiết kế tĩnh</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Nhận tư vấn gói Core</a>
+                    </div>
+                    
+                    <!-- Growth -->
+                    <div class="panel pricing-card popular">
+                        <span class="popular-badge">Phù hợp nhất</span>
+                        <h3>Growth Package</h3>
+                        <p style="color: var(--accent-secondary); font-size: 0.875rem; font-weight: 600; margin-bottom: 12px;">Dành cho: SME đang scale, thay thế 2 nhân sự in-house</p>
+                        <p class="pricing-desc">Content đều, visual mạnh, có video ngắn. Đội Sales luôn có asset sẵn sàng.</p>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 16px;"><strong style="color: var(--text-primary);">Outcome:</strong> Marketing chạy đều mà Founder không phải giữ nhịp. Campaign triển khai nhanh.</p>
+                        <div class="pricing-price text-accent">Liên hệ</div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> 30 ấn phẩm thiết kế/tháng</li>
+                            <li><i class="fa-solid fa-check"></i> 2 buổi chụp/quay video</li>
+                            <li><i class="fa-solid fa-check"></i> 4 Video Shorts/Reels</li>
+                            <li><i class="fa-solid fa-check"></i> Quản trị Media + Concept đề xuất</li>
+                            <li><i class="fa-solid fa-check"></i> SLA 24-48h thiết kế / 3-4 ngày video</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Nhận tư vấn gói Growth</a>
+                    </div>
+                    
+                    <!-- Embedded -->
+                    <div class="panel pricing-card">
+                        <h3>Embedded Package</h3>
+                        <p style="color: var(--accent-secondary); font-size: 0.875rem; font-weight: 600; margin-bottom: 12px;">Dành cho: Chuỗi, brand lớn cần sản xuất liên tục</p>
+                        <p class="pricing-desc">Năng lực sản xuất mạnh mẽ, có Art Direction, Campaign Support toàn diện.</p>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 16px;"><strong style="color: var(--text-primary);">Outcome:</strong> Một content function hoàn chỉnh "nhúng" vào doanh nghiệp, vận hành như team nội bộ.</p>
+                        <div class="pricing-price">Liên hệ</div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Không giới hạn thiết kế tĩnh</li>
+                            <li><i class="fa-solid fa-check"></i> 4 buổi sản xuất media/tháng</li>
+                            <li><i class="fa-solid fa-check"></i> 10 Video Shorts/Reels</li>
+                            <li><i class="fa-solid fa-check"></i> Concept & Art Direction hàng tháng</li>
+                            <li><i class="fa-solid fa-check"></i> Account Manager ưu tiên + Campaign Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Nhận tư vấn gói Embedded</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compare Table -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="section-header text-center" style="margin: 0 auto 40px;">
+                    <h2 class="section-title">Bảng So Sánh Chi Tiết</h2>
+                </div>
+                <div style="overflow-x: auto;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Hạng mục</th>
+                                <th>Core</th>
+                                <th>Growth</th>
+                                <th>Embedded</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Strategy & Direction</td>
+                                <td><i class="fa-solid fa-minus minus-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i> Đề xuất</td>
+                                <td><i class="fa-solid fa-check check-icon"></i> Chuyên sâu</td>
+                            </tr>
+                            <tr>
+                                <td>Social Content (2D)</td>
+                                <td>15 / tháng</td>
+                                <td>30 / tháng</td>
+                                <td>Không giới hạn</td>
+                            </tr>
+                            <tr>
+                                <td>Sales Content (Profile, Deck)</td>
+                                <td><i class="fa-solid fa-minus minus-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Video (Shorts / Reels)</td>
+                                <td><i class="fa-solid fa-minus minus-icon"></i></td>
+                                <td>4 / tháng</td>
+                                <td>10 / tháng</td>
+                            </tr>
+                            <tr>
+                                <td>Chụp / Quay</td>
+                                <td>1 buổi</td>
+                                <td>2 buổi</td>
+                                <td>4 buổi</td>
+                            </tr>
+                            <tr>
+                                <td>Campaign Support</td>
+                                <td><i class="fa-solid fa-minus minus-icon"></i></td>
+                                <td><i class="fa-solid fa-minus minus-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Optimization / Báo cáo</td>
+                                <td>Báo cáo tháng</td>
+                                <td>Báo cáo + Đề xuất</td>
+                                <td>Tối ưu liên tục</td>
+                            </tr>
+                            <tr>
+                                <td>SLA (thiết kế tĩnh)</td>
+                                <td>24-48h</td>
+                                <td>24-48h</td>
+                                <td>24h (ưu tiên)</td>
+                            </tr>
+                            <tr>
+                                <td>Review Cadence</td>
+                                <td>2 lần/tháng</td>
+                                <td>Hàng tuần</td>
+                                <td>Real-time</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add-ons -->
+        <section class="section" style="background: var(--bg-dark);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Tùy chỉnh</span>
+                    <h2 class="section-title">Add-ons / Hỗ trợ bổ sung</h2>
+                    <p class="section-subtitle">Không fit hoàn toàn với gói nào? Chúng tôi có các module bổ sung để cấu hình riêng cho bạn.</p>
+                </div>
+                <div class="addon-grid">
+                    <div class="panel addon-card">
+                        <i class="fa-solid fa-camera"></i>
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Chỉ thuê Chụp / Quay</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;">Sản xuất media theo buổi, không cần mua gói tháng.</p>
+                        </div>
+                    </div>
+                    <div class="panel addon-card">
+                        <i class="fa-solid fa-palette"></i>
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Design Campaign</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;">Thiết kế trọn bộ cho 1 chiến dịch: Key Visual, Banner, POSM.</p>
+                        </div>
+                    </div>
+                    <div class="panel addon-card">
+                        <i class="fa-solid fa-video"></i>
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Video TVC ngắn</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;">Sản xuất video quảng cáo dạng 15-30s cho Facebook/YouTube Ads.</p>
+                        </div>
+                    </div>
+                    <div class="panel addon-card">
+                        <i class="fa-solid fa-book"></i>
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Brand Identity</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.875rem;">Logo, bộ nhận diện thương hiệu, Brand Guidelines từ đầu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2>Nhận tư vấn gói phù hợp</h2>
+                <p>Không chắc nên chọn gói nào? Hãy để chúng tôi đánh giá nhu cầu thực tế và đề xuất cấu hình tối ưu nhất.</p>
+                <div style="display: flex; justify-content: center; gap: 16px;">
+                    <a href="contact.html" class="btn btn-primary">Book Strategy Call</a>
+                    <a href="faq.html" class="btn btn-outline">Câu hỏi thường gặp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/logo-full.svg" alt="Logo" style="height: 24px; margin-bottom: 20px;">
+                    <p>Lean Premium Content Operating Partner dành cho doanh nghiệp SME.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Khám phá</h4>
+                    <a href="how-it-works.html">Cách vận hành</a>
+                    <a href="solutions.html">Giải pháp & Bảng giá</a>
+                    <a href="showcase.html">Case Studies</a>
+                    <a href="about.html">Về chúng tôi</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Tài nguyên</h4>
+                    <a href="blog.html">Blog & Insight</a>
+                    <a href="industries.html">Các ngành nghề (Use Cases)</a>
+                    <a href="faq.html">Câu hỏi thường gặp (FAQ)</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The dqmedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

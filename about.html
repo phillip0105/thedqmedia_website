@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về Chúng Tôi | The dqmedia.</title>
+    <meta name="description" content="Tìm hiểu về The dqmedia. - Hệ thống được build để giữ content chạy ổn định cho SME, không phải để làm content đơn lẻ.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        .fit-card {
+            padding: 32px;
+        }
+        .fit-card h3 {
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+        }
+        .fit-card ul {
+            list-style: none;
+        }
+        .fit-card li {
+            padding: 10px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.9375rem;
+        }
+        .fit-card li:last-child {
+            border-bottom: none;
+        }
+        .fit-yes i { color: var(--accent-primary); }
+        .fit-no i { color: var(--text-muted); }
+        @media (max-width: 768px) {
+            .fit-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-full.svg" alt="The dqmedia. Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="how-it-works.html">Cách vận hành</a></li>
+                <li><a href="solutions.html">Giải pháp</a></li>
+                <li><a href="showcase.html">Dự án</a></li>
+                <li><a href="about.html" class="active">Về chúng tôi</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="color: white; padding: 8px 16px;">Đặt lịch tư vấn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <header class="page-header">
+            <div class="container">
+                <span class="hero-badge"><i class="fa-solid fa-building"></i> About</span>
+                <h1>Chúng tôi không được build để làm content.<br>Chúng tôi được build để giữ content chạy ổn định.</h1>
+            </div>
+        </header>
+
+        <!-- POV -->
+        <section class="section" style="background: var(--bg-dark);">
+            <div class="container" style="max-width: 800px; text-align: center;">
+                <span class="section-label">Góc nhìn của chúng tôi</span>
+                <h2 style="font-size: 2rem; margin-bottom: 24px; line-height: 1.3;">Content problem is an ops problem.</h2>
+                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8;">Hầu hết các founder nghĩ rằng họ đang gặp vấn đề về "content". Nhưng thực ra, vấn đề nằm ở <strong style="color: var(--text-primary);">vận hành</strong>. Content không thiếu ý tưởng — nó thiếu một hệ thống đủ ổn định để ra nội dung đều mỗi tuần, mỗi tháng, quanh năm.</p>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners-section">
+            <div class="container">
+                <div class="partners-title">Đối tác tuyệt vời đồng hành cùng chúng tôi</div>
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <div class="partner-logo"><i class="fa-solid fa-building-columns"></i> LPBank</div>
+                        <div class="partner-logo"><i class="fa-solid fa-building-columns"></i> PVcomBank</div>
+                        <div class="partner-logo"><i class="fa-solid fa-globe"></i> PHILIPPINE HUB PARTNERS</div>
+                        <div class="partner-logo"><i class="fa-solid fa-mug-hot"></i> Rita</div>
+                        <div class="partner-logo"><i class="fa-solid fa-leaf"></i> ASPICES</div>
+                        <div class="partner-logo"><i class="fa-solid fa-fish"></i> RUBY KOI BISTRO</div>
+                        <div class="partner-logo"><i class="fa-solid fa-shop"></i> F&B Brand</div>
+                        <div class="partner-logo"><i class="fa-solid fa-cart-shopping"></i> Retail Partner</div>
+                        <div class="partner-logo"><i class="fa-solid fa-hospital"></i> Clinic Center</div>
+                        <div class="partner-logo"><i class="fa-solid fa-graduation-cap"></i> Edu Group</div>
+                    </div>
+                    <div class="marquee-content">
+                        <div class="partner-logo"><i class="fa-solid fa-building-columns"></i> LPBank</div>
+                        <div class="partner-logo"><i class="fa-solid fa-building-columns"></i> PVcomBank</div>
+                        <div class="partner-logo"><i class="fa-solid fa-globe"></i> PHILIPPINE HUB PARTNERS</div>
+                        <div class="partner-logo"><i class="fa-solid fa-mug-hot"></i> Rita</div>
+                        <div class="partner-logo"><i class="fa-solid fa-leaf"></i> ASPICES</div>
+                        <div class="partner-logo"><i class="fa-solid fa-fish"></i> RUBY KOI BISTRO</div>
+                        <div class="partner-logo"><i class="fa-solid fa-shop"></i> F&B Brand</div>
+                        <div class="partner-logo"><i class="fa-solid fa-cart-shopping"></i> Retail Partner</div>
+                        <div class="partner-logo"><i class="fa-solid fa-hospital"></i> Clinic Center</div>
+                        <div class="partner-logo"><i class="fa-solid fa-graduation-cap"></i> Edu Group</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why We Built This -->
+        <section class="section" style="background: var(--bg-darker);">
+            <div class="container" style="max-width: 800px;">
+                <span class="section-label">Tại sao chúng tôi tồn tại</span>
+                <h2 class="section-title">Mô hình này sinh ra từ nỗi đau thực tế</h2>
+                <p style="color: var(--text-secondary); font-size: 1.0625rem; line-height: 1.8; margin-top: 20px;">Chúng tôi đã từng ở cả hai phía: phía agency — nơi mọi thứ quá cồng kềnh cho SME. Và phía freelancer — nơi mọi thứ quá mỏng manh để cam kết dài hạn.</p>
+                <p style="color: var(--text-secondary); font-size: 1.0625rem; line-height: 1.8; margin-top: 16px;">The dqmedia. ra đời để lấp đầy khoảng trống giữa hai mô hình đó: <strong style="color: var(--text-primary);">đủ gọn để nhanh, đủ bài bản để tin tưởng, đủ linh hoạt để phù hợp với chi phí SME.</strong></p>
+            </div>
+        </section>
+
+        <!-- Why Not Agency / Freelancer / In-house -->
+        <section class="section" style="background: var(--bg-dark);">
+            <div class="container">
+                <div class="section-header text-center" style="margin: 0 auto 56px;">
+                    <span class="section-label">So sánh mô hình</span>
+                    <h2 class="section-title">Tại sao không phải Agency, Freelancer hay In-house?</h2>
+                </div>
+                <div class="value-grid">
+                    <div class="panel value-card" style="border-top: 3px solid var(--border-color);">
+                        <h3>Agency</h3>
+                        <p>Tập trung vào Campaign lớn, concept phức tạp. Quy trình nặng, phí quản lý cao. Không phù hợp cho nhu cầu sản xuất content hàng ngày của SME.</p>
+                    </div>
+                    <div class="panel value-card" style="border-top: 3px solid var(--border-color);">
+                        <h3>Freelancer</h3>
+                        <p>Nhanh ở lần đầu, nhưng không có hệ thống, không cam kết SLA, khó giữ nhịp dài hạn. Founder vẫn phải tự quản lý.</p>
+                    </div>
+                    <div class="panel value-card" style="border-top: 3px solid var(--accent-primary);">
+                        <h3 style="color: var(--accent-secondary);">The dqmedia.</h3>
+                        <p>Gọn như freelancer nhưng có hệ thống. Bài bản như agency nhưng không cồng kềnh. Chi phí cố định như in-house nhưng không phải nuôi team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Operating Philosophy -->
+        <section class="section" style="background: var(--bg-darker);">
+            <div class="container" style="max-width: 800px;">
+                <span class="section-label">Triết lý vận hành</span>
+                <h2 class="section-title">Chúng tôi không chạy theo số lượng. Chúng tôi chạy theo sự ổn định.</h2>
+                <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 32px;">
+                    <div class="panel" style="padding: 24px; display: flex; align-items: flex-start; gap: 16px;">
+                        <i class="fa-solid fa-circle-check text-accent" style="margin-top: 4px;"></i>
+                        <p style="color: var(--text-secondary);"><strong style="color: var(--text-primary);">Output > Outcome:</strong> Mỗi sản phẩm phải "usable" — dùng được để bán hàng, không phải chỉ để đẹp.</p>
+                    </div>
+                    <div class="panel" style="padding: 24px; display: flex; align-items: flex-start; gap: 16px;">
+                        <i class="fa-solid fa-circle-check text-accent" style="margin-top: 4px;"></i>
+                        <p style="color: var(--text-secondary);"><strong style="color: var(--text-primary);">System > Talent:</strong> Hệ thống quy trình tốt quan trọng hơn một cá nhân giỏi. Vì cá nhân có thể đi, hệ thống thì ở lại.</p>
+                    </div>
+                    <div class="panel" style="padding: 24px; display: flex; align-items: flex-start; gap: 16px;">
+                        <i class="fa-solid fa-circle-check text-accent" style="margin-top: 4px;"></i>
+                        <p style="color: var(--text-secondary);"><strong style="color: var(--text-primary);">Consistency > Creativity:</strong> Sự sáng tạo không thiếu, nhưng khả năng duy trì nhịp đều mới là thứ hiếm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Fit / Who We Don't -->
+        <section class="section" style="background: var(--bg-dark);">
+            <div class="container">
+                <div class="section-header text-center" style="margin: 0 auto 56px;">
+                    <span class="section-label">Sự phù hợp</span>
+                    <h2 class="section-title">Chúng tôi phù hợp nhất với ai?</h2>
+                </div>
+                <div class="fit-grid">
+                    <div class="panel fit-card fit-yes" style="border-top: 3px solid var(--accent-primary);">
+                        <h3 style="color: var(--accent-secondary);"><i class="fa-solid fa-check-circle"></i> Chúng tôi phù hợp với</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> SME cần content đều mỗi tuần để bán hàng</li>
+                            <li><i class="fa-solid fa-check"></i> Founder muốn tập trung kinh doanh, không ôm marketing</li>
+                            <li><i class="fa-solid fa-check"></i> Doanh nghiệp F&B, Retail, Clinic, Giáo dục cần hình ảnh liên tục</li>
+                            <li><i class="fa-solid fa-check"></i> Brand đang scale và cần một đối tác dài hạn ổn định</li>
+                        </ul>
+                    </div>
+                    <div class="panel fit-card fit-no" style="border-top: 3px solid var(--border-color);">
+                        <h3><i class="fa-solid fa-circle-xmark"></i> Chúng tôi KHÔNG phù hợp với</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-minus"></i> Doanh nghiệp chỉ cần 1 thiết kế đơn lẻ</li>
+                            <li><i class="fa-solid fa-minus"></i> Startup chưa có sản phẩm / dịch vụ rõ ràng</li>
+                            <li><i class="fa-solid fa-minus"></i> Ai tìm concept sáng tạo "big idea" kiểu agency lớn</li>
+                            <li><i class="fa-solid fa-minus"></i> Doanh nghiệp cần team ngồi tại văn phòng full-time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2>Nếu bạn thấy mình trong danh sách "phù hợp"</h2>
+                <p>Hãy để chúng tôi đánh giá hệ thống content hiện tại và thiết kế một mô hình vận hành tinh gọn cho bạn.</p>
+                <div style="display: flex; justify-content: center; gap: 16px;">
+                    <a href="contact.html" class="btn btn-primary">Book a Strategy Call</a>
+                    <a href="how-it-works.html" class="btn btn-outline">Xem cách chúng tôi vận hành</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/logo-full.svg" alt="Logo" style="height: 24px; margin-bottom: 20px;">
+                    <p>Lean Premium Content Operating Partner dành cho doanh nghiệp SME.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Khám phá</h4>
+                    <a href="how-it-works.html">Cách vận hành</a>
+                    <a href="solutions.html">Giải pháp & Bảng giá</a>
+                    <a href="showcase.html">Case Studies</a>
+                    <a href="about.html">Về chúng tôi</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Tài nguyên</h4>
+                    <a href="blog.html">Blog & Insight</a>
+                    <a href="industries.html">Các ngành nghề (Use Cases)</a>
+                    <a href="faq.html">Câu hỏi thường gặp (FAQ)</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The dqmedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

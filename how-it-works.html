@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách Hệ Thống Vận Hành | The dqmedia.</title>
+    <meta name="description" content="Thuê ngoài nhưng rõ ràng, gọn và dễ kiểm soát như nội bộ. Khám phá 6 bước vận hành content function của The dqmedia.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ─ Step Detail ─ */
+        .step-detail {
+            padding: 40px;
+            margin-bottom: 32px;
+        }
+        .step-detail:last-child { margin-bottom: 0; }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        .step-badge {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(94, 180, 255, 0.12);
+            border: 1px solid rgba(94, 180, 255, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            flex-shrink: 0;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0;
+        }
+
+        /* ─ Step Meta Grid ─ */
+        .step-meta {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .step-meta-item {
+            background: rgba(59, 130, 246, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(94, 180, 255, 0.1);
+        }
+        .step-meta-label {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+        }
+        .step-meta-item p {
+            font-size: 0.9375rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+        }
+
+        /* ─ SLA Grid ─ */
+        .sla-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .sla-card {
+            padding: 32px 24px;
+            text-align: center;
+        }
+        .sla-value {
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--accent-primary);
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+        .sla-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .step-meta { grid-template-columns: 1fr; }
+            .sla-grid { grid-template-columns: repeat(2, 1fr); }
+            .step-detail { padding: 28px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-full.svg" alt="The dqmedia. Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="how-it-works.html" class="active">Cách vận hành</a></li>
+                <li><a href="solutions.html">Giải pháp</a></li>
+                <li><a href="showcase.html">Dự án</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="color: white; padding: 8px 16px;">Đặt lịch tư vấn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header" style="padding-bottom: 80px; text-align: center;">
+            <div class="container" style="max-width: 800px; margin-bottom: 64px;">
+                <span class="hero-badge" style="margin: 0 auto 24px;"><i class="fa-solid fa-gears"></i> Process Clarity</span>
+                <h1>Cách một content function vận hành</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Thuê ngoài nhưng rõ ràng, bài bản và dễ kiểm soát như một team nội bộ.</p>
+            </div>
+
+            <!-- Workflow Overview -->
+            <div class="container" style="position: relative; z-index: 5;">
+                <div class="process-timeline" style="margin-top: 0; margin-bottom: 0;">
+                    <a href="#step-1" class="timeline-step">
+                        <div class="step-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        <h4>1. Align</h4>
+                        <p>Đồng bộ</p>
+                    </a>
+                    <div class="timeline-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <a href="#step-2" class="timeline-step">
+                        <div class="step-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                        <h4>2. Plan</h4>
+                        <p>Kế hoạch</p>
+                    </a>
+                    <div class="timeline-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <a href="#step-3" class="timeline-step">
+                        <div class="step-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h4>3. Produce</h4>
+                        <p>Sản xuất</p>
+                    </a>
+                    <div class="timeline-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <a href="#step-4" class="timeline-step">
+                        <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h4>4. Review</h4>
+                        <p>Kiểm duyệt</p>
+                    </a>
+                    <div class="timeline-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <a href="#step-5" class="timeline-step">
+                        <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h4>5. Ship</h4>
+                        <p>Xuất bản</p>
+                    </a>
+                    <div class="timeline-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <a href="#step-6" class="timeline-step">
+                        <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>6. Improve</h4>
+                        <p>Tối ưu</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Step Breakdown -->
+        <section class="section" style="background: var(--bg-darker); padding-top: 48px;">
+            <div class="container" style="max-width: 900px;">
+                
+                <div class="panel step-detail" id="step-1">
+                    <div class="step-header">
+                        <div class="step-badge">01</div>
+                        <h3>Align — Đồng bộ mục tiêu</h3>
+                    </div>
+                    <div class="step-meta">
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Goal</div>
+                            <p>Hiểu rõ brand, sản phẩm, tone of voice và mục tiêu kinh doanh.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Khách hàng thấy</div>
+                            <p>Một tài liệu Brand Wiki hoàn chỉnh, sẵn sàng để team sản xuất bắt đầu.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Chúng tôi đảm nhận</div>
+                            <p>Phỏng vấn, thu thập tài liệu, xây dựng Wiki nội bộ về thương hiệu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel step-detail" id="step-2">
+                    <div class="step-header">
+                        <div class="step-badge">02</div>
+                        <h3>Plan — Lên kế hoạch</h3>
+                    </div>
+                    <div class="step-meta">
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Goal</div>
+                            <p>Tạo Content Calendar hàng tháng, gắn vào mục tiêu bán hàng cụ thể.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Khách hàng thấy</div>
+                            <p>Bảng kế hoạch nội dung rõ ràng để duyệt 1 lần duy nhất vào đầu tháng.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Chúng tôi đảm nhận</div>
+                            <p>Đề xuất chủ đề, phân bổ lịch, gắn mục tiêu conversion cho từng bài.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel step-detail" id="step-3">
+                    <div class="step-header">
+                        <div class="step-badge">03</div>
+                        <h3>Produce — Sản xuất</h3>
+                    </div>
+                    <div class="step-meta">
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Goal</div>
+                            <p>Ra sản phẩm usable theo đúng SLA cam kết.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Khách hàng thấy</div>
+                            <p>File được gửi đúng hạn trên hệ thống quản lý chung, sẵn sàng duyệt.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Chúng tôi đảm nhận</div>
+                            <p>Phân công Designer, Creator, Video Editor. QC nội bộ trước khi gửi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel step-detail" id="step-4">
+                    <div class="step-header">
+                        <div class="step-badge">04</div>
+                        <h3>Review — Duyệt &amp; Chỉnh sửa</h3>
+                    </div>
+                    <div class="step-meta">
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Goal</div>
+                            <p>Feedback nhanh, sửa chính xác, không lãng phí thời gian.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Khách hàng thấy</div>
+                            <p>Comment trực tiếp trên file, nhận bản sửa trong 12-24h.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Chúng tôi đảm nhận</div>
+                            <p>Xử lý feedback, chỉnh sửa và gửi lại bản Final.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel step-detail" id="step-5">
+                    <div class="step-header">
+                        <div class="step-badge">05</div>
+                        <h3>Ship — Bàn giao &amp; Xuất bản</h3>
+                    </div>
+                    <div class="step-meta">
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Goal</div>
+                            <p>Content lên sóng đúng lịch, đa định dạng, sẵn sàng phân phối.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Khách hàng thấy</div>
+                            <p>File đa nền tảng (FB, IG, TikTok) lưu trữ đám mây an toàn.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Chúng tôi đảm nhận</div>
+                            <p>Xuất file, lưu trữ, scheduling (nếu có).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel step-detail" id="step-6">
+                    <div class="step-header">
+                        <div class="step-badge">06</div>
+                        <h3>Improve — Đo lường &amp; Tối ưu</h3>
+                    </div>
+                    <div class="step-meta">
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Goal</div>
+                            <p>Cải thiện liên tục dựa trên data thực tế.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Khách hàng thấy</div>
+                            <p>Báo cáo tháng: điều gì hoạt động, điều gì cần thay đổi.</p>
+                        </div>
+                        <div class="step-meta-item">
+                            <div class="step-meta-label">Chúng tôi đảm nhận</div>
+                            <p>Phân tích performance, đề xuất tối ưu cho tháng tiếp theo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Communication Flow -->
+        <section class="section" style="background: var(--bg-darker);">
+            <div class="container">
+                <div class="section-header text-center" style="margin: 0 auto 48px;">
+                    <span class="section-label">Communication</span>
+                    <h2 class="section-title">Luồng giao tiếp</h2>
+                </div>
+                <div class="value-grid" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="panel value-card" style="text-align: center;">
+                        <div class="value-icon" style="margin: 0 auto 24px;"><i class="fa-solid fa-headset"></i></div>
+                        <h3>1 Point of Contact</h3>
+                        <p>Bạn chỉ cần trao đổi với 1 Account Manager duy nhất.</p>
+                    </div>
+                    <div class="panel value-card" style="text-align: center;">
+                        <div class="value-icon" style="margin: 0 auto 24px;"><i class="fa-solid fa-list-check"></i></div>
+                        <h3>Request Queue</h3>
+                        <p>Mọi yêu cầu được quản lý trên một hàng đợi rõ ràng, đúng thứ tự ưu tiên.</p>
+                    </div>
+                    <div class="panel value-card" style="text-align: center;">
+                        <div class="value-icon" style="margin: 0 auto 24px;"><i class="fa-solid fa-arrows-rotate"></i></div>
+                        <h3>Review Loop</h3>
+                        <p>Vòng duyệt nhanh gọn: Gửi → Feedback → Sửa → Duyệt. Tối đa 2 vòng.</p>
+                    </div>
+                    <div class="panel value-card" style="text-align: center;">
+                        <div class="value-icon" style="margin: 0 auto 24px;"><i class="fa-solid fa-circle-check"></i></div>
+                        <h3>Approvals</h3>
+                        <p>Khách hàng duyệt trực tiếp trên nền tảng quản lý, không qua email lộn xộn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLA -->
+        <section class="section" style="background: var(--bg-dark);">
+            <div class="container">
+                <div class="section-header text-center" style="margin: 0 auto 48px;">
+                    <span class="section-label">SLA</span>
+                    <h2 class="section-title">Cam kết thời gian xử lý</h2>
+                </div>
+                <div class="sla-grid">
+                    <div class="panel sla-card">
+                        <div class="sla-value">&lt; 4h</div>
+                        <div class="sla-label">Response Time (Giờ hành chính)</div>
+                    </div>
+                    <div class="panel sla-card">
+                        <div class="sla-value">24-48h</div>
+                        <div class="sla-label">First Draft (Thiết kế tĩnh)</div>
+                    </div>
+                    <div class="panel sla-card">
+                        <div class="sla-value">12-24h</div>
+                        <div class="sla-label">Revision (Chỉnh sửa)</div>
+                    </div>
+                    <div class="panel sla-card">
+                        <div class="sla-value">+50% phí</div>
+                        <div class="sla-label">Rush Request (Gấp &lt;12h)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2>Thấy hệ thống này phù hợp?</h2>
+                <p>Khám phá các gói dịch vụ để chọn mức công suất tối ưu nhất cho doanh nghiệp.</p>
+                <div style="display: flex; justify-content: center; gap: 16px;">
+                    <a href="solutions.html" class="btn btn-outline">Xem gói phù hợp</a>
+                    <a href="contact.html" class="btn btn-primary">Book Strategy Call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/logo-full.svg" alt="Logo" style="height: 24px; margin-bottom: 20px;">
+                    <p>Lean Premium Content Operating Partner dành cho doanh nghiệp SME.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Khám phá</h4>
+                    <a href="how-it-works.html">Cách vận hành</a>
+                    <a href="solutions.html">Giải pháp & Bảng giá</a>
+                    <a href="showcase.html">Case Studies</a>
+                    <a href="about.html">Về chúng tôi</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Tài nguyên</h4>
+                    <a href="blog.html">Blog & Insight</a>
+                    <a href="industries.html">Các ngành nghề (Use Cases)</a>
+                    <a href="faq.html">Câu hỏi thường gặp (FAQ)</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The dqmedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

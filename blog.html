@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - The dqmedia.</title>
+    <meta name="description" content="Góc chia sẻ kiến thức về Content, Media và Marketing dành cho SME.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-card {
+            background: var(--bg-panel);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition-normal);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            border-color: var(--border-highlight);
+            transform: translateY(-4px);
+        }
+        .blog-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .blog-content {
+            padding: 24px;
+        }
+        .blog-meta {
+            color: var(--accent-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .blog-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .blog-content p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .read-more {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition-fast);
+        }
+        .read-more:hover {
+            color: var(--accent-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-full.svg" alt="The dqmedia. Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="how-it-works.html">Cách vận hành</a></li>
+                <li><a href="solutions.html">Giải pháp</a></li>
+                <li><a href="showcase.html">Dự án</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="color: white; padding: 8px 16px;">Đặt lịch tư vấn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="hero-badge"><i class="fa-solid fa-newspaper"></i> Blog & Kiến Thức</span>
+            <h1>Cẩm nang vận hành Marketing.</h1>
+            <p class="hero-desc">Góc chia sẻ kiến thức thực chiến, giúp các Founder SME hiểu và xây dựng hệ thống Content/Media một cách tinh gọn nhất.</p>
+        </div>
+    </header>
+
+    <!-- Blog Grid -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="showcase-grid"> <!-- Reusing showcase-grid for 3 column layout -->
+                <article class="blog-card">
+                    <img src="assets/showcase_2.png" alt="Blog 1" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta">Marketing F&B • 5 phút đọc</div>
+                        <h3>Vì sao nhà hàng cần hình ảnh đẹp để tồn tại trên các App Giao Đồ Ăn?</h3>
+                        <p>Trong thời đại mà khách hàng "ăn bằng mắt" trước khi ăn bằng miệng, một hình ảnh món ăn đẹp có thể tăng tỷ lệ click lên tới 40%.</p>
+                        <a href="#" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="assets/showcase_3.png" alt="Blog 2" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta">Video Marketing • 7 phút đọc</div>
+                        <h3>Công thức làm Video Ngắn (Shorts/Reels) hiệu quả cho người mới</h3>
+                        <p>Không cần máy quay đắt tiền, đây là những yếu tố cốt lõi giúp video của bạn giữ chân người xem trong 3 giây đầu tiên.</p>
+                        <a href="#" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="assets/showcase_1.png" alt="Blog 3" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta">Branding • 6 phút đọc</div>
+                        <h3>Thuê ngoài hay xây dựng team In-house: Đâu là bài toán cho SME?</h3>
+                        <p>Phân tích chi tiết bài toán chi phí và hiệu quả giữa việc duy trì một đội ngũ nội bộ so với việc thuê một phòng ban media từ bên ngoài.</p>
+                        <a href="#" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/logo-full.svg" alt="Logo" style="height: 24px; margin-bottom: 20px;">
+                    <p>Lean Premium Content Operating Partner dành cho doanh nghiệp SME.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Khám phá</h4>
+                    <a href="how-it-works.html">Cách vận hành</a>
+                    <a href="solutions.html">Giải pháp & Bảng giá</a>
+                    <a href="showcase.html">Case Studies</a>
+                    <a href="about.html">Về chúng tôi</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Tài nguyên</h4>
+                    <a href="blog.html">Blog & Insight</a>
+                    <a href="industries.html">Các ngành nghề (Use Cases)</a>
+                    <a href="faq.html">Câu hỏi thường gặp (FAQ)</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The dqmedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

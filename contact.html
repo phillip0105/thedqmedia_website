@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Lịch Strategy Call | The dqmedia.</title>
+    <meta name="description" content="Đặt lịch gọi tư vấn chiến lược miễn phí cùng The dqmedia. để xây dựng hệ thống content và media thuê ngoài tối ưu cho doanh nghiệp SME.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .agenda-list {
+            list-style: none;
+            margin-top: 24px;
+        }
+        .agenda-list li {
+            padding: 12px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .agenda-list li i {
+            color: var(--accent-primary);
+            margin-top: 4px;
+        }
+        .trust-note {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--accent-primary);
+            padding: 16px;
+            margin-top: 32px;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-full.svg" alt="The dqmedia. Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="how-it-works.html">Cách vận hành</a></li>
+                <li><a href="solutions.html">Giải pháp</a></li>
+                <li><a href="showcase.html">Dự án</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="color: white; padding: 8px 16px;">Đặt lịch tư vấn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header" style="padding-bottom: 40px; border-bottom: none;">
+            <div class="container text-center" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <span class="hero-badge"><i class="fa-solid fa-calendar-check"></i> Strategy Call Booking</span>
+                <h1 style="margin-top: 16px;">Xây dựng Hệ thống Content cho riêng bạn.</h1>
+                <p class="hero-desc" style="margin: 0 auto;">Cuộc gọi 30 phút hoàn toàn miễn phí (No strings attached) để đánh giá hệ thống nội dung hiện tại và thiết kế mô hình thuê ngoài tinh gọn nhất.</p>
+            </div>
+        </header>
+
+        <section class="section pt-0" style="padding-top: 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; max-width: 1000px; margin: 0 auto; align-items: start;">
+                    <!-- Context Section -->
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 16px;">Trong 30 phút này, chúng ta sẽ:</h2>
+                        <ul class="agenda-list">
+                            <li><i class="fa-solid fa-bullseye"></i> <div><strong>Khảo sát hiện trạng:</strong> Tìm ra "điểm nghẽn" trong luồng sản xuất hình ảnh/video hiện tại của bạn.</div></li>
+                            <li><i class="fa-solid fa-sitemap"></i> <div><strong>Xây dựng Workflow:</strong> Đề xuất quy trình sản xuất (Brief -> Duyệt) phù hợp với quy mô team bạn.</div></li>
+                            <li><i class="fa-solid fa-calculator"></i> <div><strong>Dự toán chi phí:</strong> Khớp nối các gói dịch vụ (hoặc Add-on) để tạo ra chi phí cố định (Fixed cost) tối ưu nhất thay cho In-house.</div></li>
+                        </ul>
+
+                        <div class="trust-note">
+                            <strong>Lưu ý:</strong> Cuộc gọi này là tư vấn chiến lược vận hành (Operational Strategy), không phải một buổi cố ép doanh số. Nếu The dqmedia. không phải giải pháp phù hợp nhất với giai đoạn của bạn, chúng tôi sẽ nói thẳng.
+                        </div>
+                    </div>
+
+                    <!-- Qualification Form -->
+                    <div class="panel contact-form-wrapper" style="padding: 40px;">
+                        <h3 style="margin-bottom: 24px; font-size: 1.25rem;">Điền thông tin để đặt lịch</h3>
+                        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Yêu cầu đã được gửi. Chúng tôi sẽ liên hệ qua Zalo/Điện thoại để chốt giờ họp!');">
+                            <div class="form-group">
+                                <label for="name">Họ và Tên *</label>
+                                <input type="text" id="name" class="form-control" required placeholder="Tên của bạn">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại (Zalo) *</label>
+                                <input type="tel" id="phone" class="form-control" required placeholder="Số điện thoại liên lạc">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Ngành nghề / Lĩnh vực kinh doanh *</label>
+                                <input type="text" id="company" class="form-control" required placeholder="VD: Nhà hàng F&B, Thời trang, Clinic...">
+                            </div>
+                            <div class="form-group">
+                                <label for="revenue">Quy mô doanh nghiệp (Revenue stage)</label>
+                                <select id="revenue" class="form-control" style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem top 50%; background-size: 0.65rem auto;">
+                                    <option value="" disabled selected>Chọn quy mô</option>
+                                    <option value="startup">Mới bắt đầu (< 500 triệu/năm)</option>
+                                    <option value="growing">Đang tăng trưởng (500tr - 5 tỷ/năm)</option>
+                                    <option value="scaling">Scale (5 tỷ - 20 tỷ/năm)</option>
+                                    <option value="enterprise">Doanh nghiệp lớn (> 20 tỷ/năm)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="current-setup">Hiện tại anh/chị đang làm content bằng cách nào?</label>
+                                <select id="current-setup" class="form-control" style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem top 50%; background-size: 0.65rem auto;">
+                                    <option value="" disabled selected>Chọn hình thức hiện tại</option>
+                                    <option value="founder">Founder tự làm</option>
+                                    <option value="freelancer">Thuê Freelancer</option>
+                                    <option value="agency">Thuê Agency</option>
+                                    <option value="inhouse">Có team In-house</option>
+                                    <option value="none">Chưa có gì</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="challenge">Bottleneck lớn nhất hiện tại là gì? *</label>
+                                <textarea id="challenge" class="form-control" required placeholder="VD: Content không ra đều, freelancer hay trễ hẹn, chi phí In-house quá cao, không có asset cho Sales..." style="min-height: 100px;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 8px; font-size: 1.125rem; padding: 16px;">Gửi Yêu Cầu Tư Vấn</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/logo-full.svg" alt="Logo" style="height: 24px; margin-bottom: 20px;">
+                    <p>Lean Premium Content Operating Partner dành cho doanh nghiệp SME.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Khám phá</h4>
+                    <a href="how-it-works.html">Cách vận hành</a>
+                    <a href="solutions.html">Giải pháp & Bảng giá</a>
+                    <a href="showcase.html">Case Studies</a>
+                    <a href="about.html">Về chúng tôi</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Tài nguyên</h4>
+                    <a href="blog.html">Blog & Insight</a>
+                    <a href="industries.html">Các ngành nghề (Use Cases)</a>
+                    <a href="faq.html">Câu hỏi thường gặp (FAQ)</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The dqmedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
